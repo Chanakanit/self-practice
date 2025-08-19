@@ -1,0 +1,71 @@
+โจทย์ 1: shallowEqual
+ตรวจสอบว่า object สองตัวมี key และ value ในระดับแรกเหมือนกันหรือไม่
+หลักการ:
+เช็คจำนวน key ถ้าไม่เท่ากัน → return false
+วน key ของ objA → ถ้า key ไม่มีใน objB หรือ value ไม่เท่ากัน → return false
+ถ้าผ่านทั้งหมด → return true
+
+โจทย์ 2: compareArraysShallow
+ ตรวจสอบว่า array สองตัวยาวเท่ากันและ element ในตำแหน่งเดียวกัน === กันหรือไม่
+หลักการ:
+เช็คความยาว array
+ใช้ every วนเช็คแต่ละตำแหน่ง → true ถ้า element ทุกตัวเท่ากัน
+
+โจทย์ 3: hasSameKeys
+ตรวจสอบว่า object สองตัวมี key เหมือนกันทั้งหมด (ไม่สนค่า)
+หลักการ:
+เช็คจำนวน key
+วน key ของ objA → ตรวจสอบว่ามีอยู่ใน objB ทุกตัว → return true/false
+
+โจทย์ 4: propsChanged
+คืน array ของ key ที่มีค่าเปลี่ยนแปลงระหว่าง objA กับ objB
+หลักการ:
+วน key ของ objA → ถ้า key อยู่ใน objB และค่าไม่เท่ากัน → push ลง array
+คืน array ของ key ที่เปลี่ยน
+
+โจทย์ 5: isSameReference
+ตรวจสอบว่า a และ b อ้างอิง object/array ตัวเดียวกันหรือไม่
+หลักการ: ใช้ === เปรียบเทียบ reference ของ object
+
+โจทย์ 6-7: getKeys / getValues
+คืน array ของ key หรือ value ของ object
+หลักการ:
+Object.keys(obj) / Object.values(obj)
+หรือวน for..in แล้ว push ลง array
+
+โจทย์ 8: mergeObjects
+รวม object สองตัว ถ้า key ซ้ำ → ใช้ค่า objB
+หลักการ: ใช้ spread syntax {...objA, ...objB}
+
+โจทย์ 9: invertObject
+สลับ key ↔ value ของ object
+หลักการ:
+วน key ของ object
+result[obj[key]] = key
+
+โจทย์ 10-11: pick / omit
+pick → คืน object ใหม่มีเฉพาะ key ที่เลือก
+omit → คืน object ใหม่โดยลบ key ที่เลือก
+หลักการ:
+pick → วน keys ที่ต้องการ → result[key] = obj[key]
+omit → clone object แล้ว delete key ที่ไม่เอา
+
+โจทย์ 13: countProperties
+คืนจำนวน property ทั้งหมด รวม nested object
+หลักการ:
+วน key ของ object
+ถ้า value เป็น object → recursion
+นับทุก key
+
+โจทย์ 14: countDuplicates
+นับจำนวนครั้งที่ตัวเลขซ้ำใน array → คืน object {num: count}
+หลักการ:
+วน array → ถ้า key มีแล้ว ++ ถ้ายังไม่มี =1
+ลบ key ที่ count = 1
+
+โจทย์ 15: groupBy
+จัดกลุ่ม element ตาม key ที่ได้จากฟังก์ชัน keyFn
+หลักการ:
+วน array → หา key จาก keyFn
+ถ้ายังไม่มี array สำหรับ key → สร้างใหม่
+push element ลง array → คืน object ที่จัดกลุ่มแล้ว

@@ -1,15 +1,80 @@
+โจทย์ 1: transformNumbers
+เปลี่ยนเลขใน array → คู่ ×2, คี่ +5
+หลักการ:
+วนแต่ละ element → เช็คคู่/คี่ → คำนวณตามเงื่อนไข → push ลง array ใหม่
+ใช้ map แทน loop ได้
 
-ฝึกทบทวนความรู้ JavaScript ที่เรียนมาปีก่อน โดยใช้โจทย์ฝึกเขียนฟังก์ชัน 15 ข้อ ครอบคลุมทั้งการใช้
+โจทย์ 2: filterAndUppercase
+กรองชื่อผลไม้ที่ยาว >5 → แปลงเป็นตัวพิมพ์ใหญ่
+หลักการ:
+ใช้ filter ลบ element ที่ไม่ตรงเงื่อนไข
+ใช้ map เปลี่ยนค่าเป็น uppercase
 
-* การวนลูป (`for`, `while`, `for...of`)
-* การใช้เมธอดจัดการอาเรย์ (`map`, `filter`, `reduce`, `sort`, `join`)
-* การจัดการข้อมูลตัวเลข, string, object, และ array ของ object
-* การประยุกต์ใช้เงื่อนไข (`if...else`, ternary operator)
+โจทย์ 3: removeUnder50
+ลบตัวเลข <50 ออกจาก array
+หลักการ:
+ใช้ while loop ตรวจแต่ละ element → ถ้าน้อยกว่า 50 splice ลบ
+หรือใช้ filter แทนได้
 
-**วัตถุประสงค์:**
+โจทย์ 4: gradeResults
+เพิ่มข้อความคะแนนสอบตามเกรด
+หลักการ:
+วนแต่ละ element → ใช้ if/else เช็คช่วงคะแนน → ต่อ string
+ใช้ map ทำให้สั้นลง
 
-* ทบทวนพื้นฐานการเขียนฟังก์ชันใน JavaScript
-* ฝึกคิดเชิงตรรกะและการแก้ปัญหาขั้นตอนต่อขั้นตอน
-* ใช้ทั้งวิธี imperative (เขียนวนลูปเอง) และ functional (ใช้เมธอดของ array) เพื่อเปรียบเทียบความเข้าใจ
+โจทย์ 5: sumEvenOdd
+หาผลรวมเลขคู่/คี่ → คืนเป็น object {evenSum, oddSum}
+หลักการ:
+วน array → ตรวจเลขคู่/คี่ → บวกเข้า property ที่เหมาะสม
 
----
+โจทย์ 6: filterAdults
+กรองคนอายุ ≥18
+หลักการ:
+วน array ของ object → เช็ค age → push เข้า array ใหม่
+ใช้ filter ทำได้สั้น ๆ
+
+โจทย์ 7: sumArray
+หาผลรวมของตัวเลขทั้งหมด
+หลักการ:
+ใช้ reduce → accumulator + current
+
+โจทย์ 8: addEmoji
+เพิ่ม emoji ต่อท้าย string ทุกตัวใน array
+หลักการ:
+ใช้ map → ต่อ string
+
+โจทย์ 9: findMax
+หาค่าสูงสุดใน array
+หลักการ:
+วน for...of → เก็บ max ปัจจุบัน
+หรือใช้ sort/Math.max(...arr)
+
+โจทย์ 10: joinAndUppercase
+รวม string เป็นข้อความเดียว → แปลงตัวใหญ่
+หลักการ:
+ใช้ join('-') และ toUpperCase()
+
+โจทย์ 11: sortNamesByScore
+เรียงชื่อ object ตาม score
+หลักการ:
+ใช้ sort → เปรียบเทียบ a.score กับ b.score
+
+โจทย์ 12: calculateAverages
+คืนค่า array ของ object {name, average} → ค่าเฉลี่ย 2 ตำแหน่ง
+หลักการ:
+วนแต่ละ person → หาผลรวม scores → หารด้วยจำนวน score → toFixed(2)
+
+โจทย์ 13: uniqueSortedWords
+แยก string เป็นคำ → ลบซ้ำ → เรียง A-Z
+หลักการ:
+split(" ") → flatten array → Set ลบซ้ำ → sort()
+
+โจทย์ 14: countDuplicates
+นับจำนวนครั้งของตัวเลขซ้ำ → คืน object
+หลักการ:
+ใช้ object เป็น map → key = element, value = count → เพิ่มเมื่อเจอซ้ำ
+
+โจทย์ 15: aboveAverageSalaries
+คืนคนที่มี salary > ค่าเฉลี่ย
+หลักการ:
+หา average → วน/filter → คืน object ที่ salary > average
