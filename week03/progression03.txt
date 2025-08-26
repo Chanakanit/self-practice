@@ -1,0 +1,74 @@
+โจทย์ 1: square
+ฝึก Function Expression
+รับพารามิเตอร์ 1 ตัว และคืนค่ากำลังสอง
+เรียนรู้การเก็บฟังก์ชันในตัวแปรและการคืนค่า
+
+โจทย์ 2: greet
+ฝึก Function Expression
+รับพารามิเตอร์ String และคืนข้อความด้วย template string
+เน้นการคืนค่าแบบ String
+
+โจทย์ 3: multiply
+ฝึก Default Parameters
+ทำความเข้าใจการกำหนดค่าเริ่มต้นให้พารามิเตอร์
+ฝึกคำนวณเลขด้วยการคูณ
+
+โจทย์ 4: sumAll
+ฝึก Rest Parameter (...nums)
+รับตัวเลขไม่จำกัดจำนวน และรวมเป็นผลลัพธ์
+เรียนรู้การวน array ด้วย reduce
+
+โจทย์ 5: mergeArrays
+ฝึก Spread Operator
+รวม array สองตัวเป็น array เดียว
+เข้าใจการกระจายค่า array ลงใน array ใหม่
+
+โจทย์ 6: printUser
+ฝึก Object Destructuring
+ดึงค่า property ของ object และใช้ในข้อความ
+เรียนรู้การเข้าถึง property แบบง่าย ๆ
+
+โจทย์ 7: curry
+ฝึก Currying
+แปลงฟังก์ชันหลายพารามิเตอร์ให้เรียกทีละตัวได้
+เข้าใจ concept ของ closure และการคืนฟังก์ชันซ้อน
+
+โจทย์ 8: createCounter
+ฝึก Closure
+คืนฟังก์ชันที่เก็บค่า state (count)
+เรียนรู้การเก็บข้อมูลข้ามการเรียกฟังก์ชัน
+
+โจทย์ 9: once
+ฝึก Higher-Order Function + Closure
+สร้างฟังก์ชันที่เรียกฟังก์ชันอื่นได้ครั้งเดียว
+เข้าใจการใช้ flag เก็บสถานะภายใน closure
+
+โจทย์ 10: combineI
+ฝึก Rest Parameters + Object Literal Shorthand
+รับหลาย hobby และคืน object รวมข้อมูล
+ฝึกการสร้าง object แบบ concise
+
+โจทย์ 11: calculate
+ฝึก Destructuring + Default Parameter
+รับ object และทำ operation ตามค่า op
+ฝึกเงื่อนไขภายในฟังก์ชัน
+
+โจทย์ 12: cloneAndUpdate
+ฝึก Object Spread
+สร้าง object ใหม่โดย merge property
+เข้าใจ concept ของ immutability เล็กน้อย
+
+โจทย์ 13: sumEvenOdd
+ฝึก Rest Parameter + Reduce
+แยกเลขคู่และเลขคี่ แล้วรวมผลลัพธ์
+ฝึกการสะสมค่าและคืน object
+
+โจทย์ 14: highestSalary
+ฝึก Reduce
+หาค่า maximum ของ property ใน object array
+เรียนรู้การเปรียบเทียบค่าและคืน object
+
+โจทย์ 15: groupByCategory
+ฝึก Reduce + Object Manipulation
+จัดกลุ่ม array ของ object ตาม key (category)
+เข้าใจการสร้าง object แบบ dynamic
