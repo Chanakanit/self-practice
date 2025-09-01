@@ -1,0 +1,127 @@
+โจทย์ 1: doubleValues
+
+ฝึก: Array method (map)
+
+คำอธิบาย: คืน array ใหม่ที่ทุกค่าคูณ 2
+
+Concept: การวน array ด้วย map และคืนค่า array ใหม่โดยไม่แก้ไข array เดิม
+
+โจทย์ 2: filterByLength
+
+ฝึก: Array method (filter)
+
+คำอธิบาย: คืน array ของ string ที่ยาวกว่า minLen
+
+Concept: การกรองค่าใน array ตามเงื่อนไข และการใช้ .length ของ string
+
+โจทย์ 3: getUnique
+
+ฝึก: Array method (reduce) + Logic
+
+คำอธิบาย: คืน array ที่ตัดค่าซ้ำออก
+
+Concept: การสะสมค่าที่ไม่ซ้ำ และเช็คค่าซ้ำด้วย .includes()
+
+โจทย์ 4: sortByName
+
+ฝึก: Array method (sort)
+
+คำอธิบาย: คืน array ของ object เรียงตาม property name
+
+Concept: การใช้ localeCompare และ .toLowerCase() เพื่อเปรียบเทียบ string
+
+โจทย์ 5: groupByGrade
+
+ฝึก: Array method (reduce) + Object manipulation
+
+คำอธิบาย: คืน object ที่จัดกลุ่มนักเรียนตาม grade
+
+Concept: การสร้าง object dynamic และเพิ่ม array ของ object ตาม key
+
+โจทย์ 6: averageScore
+
+ฝึก: Array method (reduce) + เงื่อนไขตรวจสอบ array ว่าง
+
+คำอธิบาย: คืนค่าเฉลี่ยคะแนนของนักเรียน
+
+Concept: การรวมค่าใน array ด้วย reduce และการคำนวณค่าเฉลี่ย
+
+โจทย์ 7: findById
+
+ฝึก: Array method (find)
+
+คำอธิบาย: คืน object ที่มี id ตรง หรือ undefined ถ้าไม่มี
+
+Concept: การค้นหา element ใน array และเช็คเงื่อนไขด้วย callback function
+
+โจทย์ 8: countByCategory
+
+ฝึก: Array method (reduce) + Object manipulation
+
+คำอธิบาย: คืน object นับจำนวนแต่ละ cat
+
+Concept: การสะสมค่า count ใน object โดย dynamic key
+
+โจทย์ 9: flatten
+
+ฝึก: Array method (flat)
+
+คำอธิบาย: แปลง array ซ้อนเป็น array เดียว
+
+Concept: การ flatten array แบบ recursive ด้วย Infinity
+
+โจทย์ 10: removeByName
+
+ฝึก: Array method (filter)
+
+คำอธิบาย: คืน array ใหม่ที่ลบ object ตาม name ที่กำหนด
+
+Concept: การสร้าง array ใหม่โดยกรองค่าที่ไม่ต้องการ
+
+โจทย์ 11: mergeData
+
+ฝึก: Array method (reduce) + Object manipulation
+
+คำอธิบาย: รวม array 2 ตัวตาม id ถ้าซ้ำให้นำของ arr2 ทับ
+
+Concept: การ merge array ของ object และ update object ตาม key
+
+โจทย์ 12: maxBy
+
+ฝึก: Array method (reduce)
+
+คำอธิบาย: คืน object ที่มีค่า property สูงสุด (key)
+
+Concept: การเปรียบเทียบค่าใน reduce และคืน element ที่มีค่ามากที่สุด
+
+โจทย์ 13: compose
+
+ฝึก: Higher-Order Function
+
+คำอธิบาย: คืนฟังก์ชัน h(x) = f(g(x))
+
+Concept: การสร้างฟังก์ชันซ้อน (closure) และ composition ของฟังก์ชัน
+
+โจทย์ 14: nthHighestUniqueSalary
+
+ฝึก: Array method (sort, reduce) + Array manipulation
+
+คำอธิบาย: คืน array ของพนักงานที่มีเงินเดือนอันดับ n แบบไม่ซ้ำ
+
+Concept: การจัดกลุ่มเงินเดือนซ้ำ, sort, และดึงกลุ่มอันดับที่ n
+
+โจทย์ 15: EmployeeStats (Class)
+
+ฝึก: Class, Methods, Array manipulation
+
+คำอธิบาย:
+
+จัดการพนักงาน {id, name, dept, salary}
+
+upsert(emp): เพิ่ม/อัปเดต employee ตาม id
+
+raise(id, amount): ปรับเงินเดือน
+
+median(dept): คืนค่ามัธยฐานของเงินเดือนแผนก
+
+Concept: การสร้าง class, ใช้ method, manipulate array ของ object, closure ภายใน class, การคำนวณ median แบบ array
