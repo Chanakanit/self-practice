@@ -1,0 +1,50 @@
+Week 1 – พื้นฐาน Array & Object
+ สิ่งที่ฝึก: การจัดการ array และ object เบื้องต้น
+ เทคนิคหลัก:
+
+   การวน array (for, while, for...of)
+   Array methods: map, filter, reduce
+   การจัดการ object: เพิ่ม property, รวม object, ดึงค่าที่ต้องการ
+   การคำนวณค่าต่าง ๆ เช่น sum, average, max/min
+ ภาพรวม: เริ่มจากการปรับข้อมูลใน array, กรองข้อมูล, รวม object, และสร้าง object summary
+
+Week 2 – การเปรียบเทียบ & ตรวจสอบ object/array
+ สิ่งที่ฝึก: ตรวจสอบความเหมือนของ object/array, การเปรียบเทียบ key/value
+ เทคนิคหลัก:
+
+   การเช็ค key/value ของ object (Object.keys(), Object.values())
+   การวน key หรือ element ของ array/object
+   การรวม object และจัดการ key ซ้ำ
+   การสร้าง object ใหม่จาก object เดิม (pick, omit, invert)
+ ภาพรวม: เน้น logic ตรวจสอบข้อมูล, ทำงานกับ object/array อย่างแม่นยำ และเรียนรู้การจัดการ nested object เบื้องต้น
+
+Week 3 – Function & Higher-Order Function
+ สิ่งที่ฝึก: ฟังก์ชันขั้นสูง, closure, currying, default/rest parameter
+ เทคนิคหลัก:
+
+   Function expression & return value
+   Default parameters, Rest parameters, Spread operator
+   Object destructuring และ shorthand object
+   Closure & Higher-order function (สร้างฟังก์ชันที่เก็บ state หรือเรียกครั้งเดียว)
+   การรวม/จัดการ array และ object ผ่านฟังก์ชัน
+ ภาพรวม: เริ่มเข้าใจการสร้างฟังก์ชันแบบยืดหยุ่น, เขียน code modular, และจัดการ data ผ่านฟังก์ชัน
+
+Week 4 – Array Methods & Data Manipulation
+ สิ่งที่ฝึก: การจัดการ array แบบลึกขึ้น
+ เทคนิคหลัก:
+
+   Array methods: map, filter, reduce, find, flat, sort
+   การจัดกลุ่มข้อมูล, นับ, รวมค่า, หาค่าสูงสุด/ต่ำสุด
+   การสร้าง object summary จาก array
+   Class และ method สำหรับจัดการข้อมูล (OOP เบื้องต้น)
+ ภาพรวม: ฝึกจัดการข้อมูลเป็นชุดใหญ่, ทำ summary, นับ, รวม, และจัดกลุ่มข้อมูล, เริ่มนำ OOP มาช่วยจัดการข้อมูล
+
+Week 5 – Object & Array Advanced
+ สิ่งที่ฝึก: การจัดการ object/array ขั้นสูง, word frequency, string manipulation
+ เทคนิคหลัก:
+
+   Object destructuring & rename property
+   รวม object, filter, map, reduce, sort, slice, join
+   การทำงานกับ string: นับตัวอักษร, palindrome, reverse, remove duplicates
+   Array manipulation: chunk, flatten, find longest, count vowels
+ ภาพรวม: ใช้เทคนิค array/object แบบครบเครื่อง, เรียนรู้ pattern การจัดการข้อมูล text + numeric, สร้าง summary และแปลงข้อมูลตามเงื่อนไขต่าง ๆ
