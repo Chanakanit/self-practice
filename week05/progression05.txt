@@ -1,0 +1,110 @@
+Test 1: addProperty(obj, key, value)
+เป็นการฝึกเรื่อง: การจัดการ Object (เพิ่ม property ให้ object เดิม)
+วิธีที่ใช้: เขียนตรง ๆ โดยใช้ obj[key] = value เพื่อเพิ่ม property ใหม่
+
+Test 2: mergeObject(obj1, obj2)
+เป็นการฝึกเรื่อง: รวม object เข้าด้วยกัน
+วิธีที่ใช้: ใช้ spread operator { ...obj1, ...obj2 }
+
+Test 3: getFreqOfWords(sentence)
+เป็นการฝึกเรื่อง: นับจำนวนความถี่ของคำในประโยค (word frequency)
+วิธีที่ใช้: ใช้ .toLowerCase() → .split(" ") → .reduce() เพื่อสร้าง object ที่เก็บจำนวนคำ
+
+Test 4: extractAndRename(obj)
+เป็นการฝึกเรื่อง: Object destructuring + การ rename property
+วิธีที่ใช้: ใช้ destructuring let { name: fullname, age: yearsOld } = obj แล้ว return ค่าใหม่
+
+Test 5: mergeAndDestructure(obj1, obj2)
+เป็นการฝึกเรื่อง: รวม object และดึงค่า property ที่ต้องการ
+วิธีที่ใช้: รวมด้วย spread operator แล้ว destructure { name, age }
+
+Test 6: removeDuplicateWords(sentence)
+เป็นการฝึกเรื่อง: การลบคำซ้ำออกจากประโยค (ignore case)
+วิธีที่ใช้: ใช้ .split(" ") + สร้าง array ใหม่เช็คซ้ำด้วย .map(...).includes(...) แล้ว join กลับ
+
+Test 7: findValue(arr)
+เป็นการฝึกเรื่อง: หาค่า min, max, sum, avg ของ array
+วิธีที่ใช้:
+- Math.min(...arr) และ Math.max(...arr)
+- .reduce() หาค่า sum แล้วเอามาหารความยาวเพื่อหา avg
+
+Test 8: convertToUppercase(arr)
+เป็นการฝึกเรื่อง: การแปลงค่า string ใน array
+วิธีที่ใช้: ใช้ .map(e => e.toUpperCase())
+
+Test 9: findMax(arr)
+เป็นการฝึกเรื่อง: หาค่าสูงสุดใน array
+วิธีที่ใช้: ใช้ Math.max(...arr) (จริง ๆ โจทย์บอก reduce แต่เลือกวิธีนี้)
+
+Test 10: removeFalsyValues(arr)
+เป็นการฝึกเรื่อง: กรองค่าที่เป็น falsy (0, "", null, undefined, false)
+วิธีที่ใช้: ใช้ .filter(ar => ar ? ar : "")
+
+Test 11: doubleAndFilterEvenNumbers(arr)
+เป็นการฝึกเรื่อง: การกรองและแปลงค่าใน array
+วิธีที่ใช้: .filter(ar => ar % 2 === 0) → .map(e => e * 2)
+
+Test 12: filterEvenNumbers(arr)
+เป็นการฝึกเรื่อง: กรองเฉพาะเลขคู่
+วิธีที่ใช้: ใช้ .filter(ar => ar % 2 === 0)
+
+Test 13: populateArray(length, value)
+เป็นการฝึกเรื่อง: การสร้าง array ใหม่ที่เต็มไปด้วยค่าหนึ่ง ๆ
+วิธีที่ใช้: ใช้ new Array(length).fill(value)
+
+Test 14: squareNumbers(arr)
+เป็นการฝึกเรื่อง: การยกกำลังสองสมาชิกใน array
+วิธีที่ใช้: ใช้ .map(ar => ar * ar)
+
+Test 15: processNumbers(arr)
+เป็นการฝึกเรื่อง: การกรอง, แปลง และรวมค่าใน array
+วิธีที่ใช้:
+- .filter(ar => ar % 2 !== 0) กรองเลขคี่
+- .reduce((acc, cur) => acc + cur ** 2, 0) รวมผลบวกเลขยกกำลังสอง
+
+Test 16: topN(arr, n)
+เป็นการฝึกเรื่อง: การเรียงลำดับและเลือกค่าใน array
+วิธีที่ใช้: .slice().sort((a,b) => b-a).slice(0,n)
+
+Test 17: reverseWordsAndSwapCase(sentence)
+เป็นการฝึกเรื่อง: การสลับคำและสลับตัวพิมพ์เล็ก–ใหญ่
+วิธีที่ใช้:
+- .split(" ").reverse().join(" ") กลับลำดับคำ
+- .split("").map(...) สลับ case
+
+Test 18: calcSumAndProduct(arr)
+เป็นการฝึกเรื่อง: การใช้ .reduce() ทำ sum และ product
+วิธีที่ใช้: ใช้ .reduce() สองครั้ง → { sum, product }
+
+Test 19: countChar(sentence, char)
+เป็นการฝึกเรื่อง: การนับตัวอักษรใน string
+วิธีที่ใช้: .split("") แล้ว .filter(w => w === char).length
+
+Test 20: sortByLength(arr)
+เป็นการฝึกเรื่อง: เรียง string ตามความยาว
+วิธีที่ใช้: .sort((a,b) => a.length - b.length)
+
+Test 21: isPalindromeIgnoreSpaces(sentence)
+เป็นการฝึกเรื่อง: ตรวจสอบ palindrome (อ่านจากซ้ายไปขวา = ขวาไปซ้าย)
+วิธีที่ใช้:
+- .trim().toLowerCase().split(" ").join("") เพื่อลบช่องว่างและทำให้เล็กหมด
+- เปรียบเทียบกับ string ที่ reverse แล้ว
+
+Test 22: chunkArray(arr, size)
+เป็นการฝึกเรื่อง: แบ่ง array เป็นชุดเล็ก ๆ
+วิธีที่ใช้: ใช้ for loop เดินทีละ size แล้ว .slice(i, i+size)
+
+Test 23: flattenArray(arr)
+เป็นการฝึกเรื่อง: การ flatten array ซ้อนกัน
+วิธีที่ใช้: ใช้ .flat(Infinity)
+
+Test 24: findLongestWordWithLength(sentence)
+เป็นการฝึกเรื่อง: หาคำที่ยาวที่สุดในประโยค
+วิธีที่ใช้: .split(" ") → .reduce((acc,cur) => ...) เพื่อหา longest word แล้ว return object { word, length }
+
+Test 25: countVowels(sentence)
+เป็นการฝึกเรื่อง: นับจำนวนสระใน string
+วิธีที่ใช้:
+- กำหนด array ["a","e","i","o","u"]
+- แปลงประโยคเป็นตัวเล็กทั้งหมด → .split("")
+- .filter(c => vowels.includes(c)).length
