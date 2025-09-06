@@ -1,127 +1,74 @@
 โจทย์ 1: doubleValues
-
-ฝึก: Array method (map)
-
-คำอธิบาย: คืน array ใหม่ที่ทุกค่าคูณ 2
-
-Concept: การวน array ด้วย map และคืนค่า array ใหม่โดยไม่แก้ไข array เดิม
+สิ่งที่ฉันกำลังฝึก: Array method (map)
+สิ่งที่ฉันทำ: ฉันเขียนฟังก์ชันที่นำ array เดิมมาแล้วใช้ map สร้าง array ใหม่ที่ทุกค่าคูณด้วย 2
+วิธีที่ใช้เขียน: ใช้ .map() ในการวนลูปและ return ค่าที่ถูกคูณ
 
 โจทย์ 2: filterByLength
-
-ฝึก: Array method (filter)
-
-คำอธิบาย: คืน array ของ string ที่ยาวกว่า minLen
-
-Concept: การกรองค่าใน array ตามเงื่อนไข และการใช้ .length ของ string
+สิ่งที่ฉันกำลังฝึก: Array method (filter)
+สิ่งที่ฉันทำ: ฉันเขียนฟังก์ชันที่กรอง array ของ string โดยเก็บเฉพาะ string ที่ยาวกว่า minLen
+วิธีที่ใช้เขียน: ใช้ .filter() พร้อม callback ที่เช็ค string.length > minLen
 
 โจทย์ 3: getUnique
-
-ฝึก: Array method (reduce) + Logic
-
-คำอธิบาย: คืน array ที่ตัดค่าซ้ำออก
-
-Concept: การสะสมค่าที่ไม่ซ้ำ และเช็คค่าซ้ำด้วย .includes()
+สิ่งที่ฉันกำลังฝึก: Array method (reduce) + Logic
+สิ่งที่ฉันทำ: ฉันสร้าง array ใหม่ที่มีแต่ค่าที่ไม่ซ้ำจาก array เดิม
+วิธีที่ใช้เขียน: ใช้ .reduce() สะสมค่าและตรวจสอบด้วย .includes() ก่อนเพิ่มเข้า array
 
 โจทย์ 4: sortByName
-
-ฝึก: Array method (sort)
-
-คำอธิบาย: คืน array ของ object เรียงตาม property name
-
-Concept: การใช้ localeCompare และ .toLowerCase() เพื่อเปรียบเทียบ string
+สิ่งที่ฉันกำลังฝึก: Array method (sort)
+สิ่งที่ฉันทำ: ฉันเขียนฟังก์ชันเรียง array ของ object ตาม property name
+วิธีที่ใช้เขียน: ใช้ .sort() และเปรียบเทียบ string ด้วย localeCompare().toLowerCase()
 
 โจทย์ 5: groupByGrade
-
-ฝึก: Array method (reduce) + Object manipulation
-
-คำอธิบาย: คืน object ที่จัดกลุ่มนักเรียนตาม grade
-
-Concept: การสร้าง object dynamic และเพิ่ม array ของ object ตาม key
+สิ่งที่ฉันกำลังฝึก: Array method (reduce) + Object manipulation
+สิ่งที่ฉันทำ: ฉันจัดกลุ่ม object ของนักเรียนตาม grade แล้วคืนค่าเป็น object
+วิธีที่ใช้เขียน: ใช้ .reduce() และเพิ่มค่าเข้า object โดยใช้ grade เป็น key
 
 โจทย์ 6: averageScore
-
-ฝึก: Array method (reduce) + เงื่อนไขตรวจสอบ array ว่าง
-
-คำอธิบาย: คืนค่าเฉลี่ยคะแนนของนักเรียน
-
-Concept: การรวมค่าใน array ด้วย reduce และการคำนวณค่าเฉลี่ย
+สิ่งที่ฉันกำลังฝึก: Array method (reduce)
+สิ่งที่ฉันทำ: ฉันหาค่าเฉลี่ยคะแนนจาก array ของตัวเลข
+วิธีที่ใช้เขียน: ใช้ .reduce() หาผลรวม แล้วนำมาหารด้วยความยาวของ array
 
 โจทย์ 7: findById
-
-ฝึก: Array method (find)
-
-คำอธิบาย: คืน object ที่มี id ตรง หรือ undefined ถ้าไม่มี
-
-Concept: การค้นหา element ใน array และเช็คเงื่อนไขด้วย callback function
+สิ่งที่ฉันกำลังฝึก: Array method (find)
+สิ่งที่ฉันทำ: ฉันค้นหา object ที่มี id ตรงตามที่กำหนด
+วิธีที่ใช้เขียน: ใช้ .find() และ callback function เช็คค่า id
 
 โจทย์ 8: countByCategory
-
-ฝึก: Array method (reduce) + Object manipulation
-
-คำอธิบาย: คืน object นับจำนวนแต่ละ cat
-
-Concept: การสะสมค่า count ใน object โดย dynamic key
+สิ่งที่ฉันกำลังฝึก: Array method (reduce) + Object manipulation
+สิ่งที่ฉันทำ: ฉันนับจำนวน element แต่ละ category แล้วเก็บใน object
+วิธีที่ใช้เขียน: ใช้ .reduce() และเพิ่ม count ใน object โดยใช้ category เป็น key
 
 โจทย์ 9: flatten
-
-ฝึก: Array method (flat)
-
-คำอธิบาย: แปลง array ซ้อนเป็น array เดียว
-
-Concept: การ flatten array แบบ recursive ด้วย Infinity
+สิ่งที่ฉันกำลังฝึก: Array method (flat)
+สิ่งที่ฉันทำ: ฉันแปลง array ที่มีซ้อนเป็น array เดียว
+วิธีที่ใช้เขียน: ใช้ .flat(Infinity) เพื่อ flatten ทุกระดับ
 
 โจทย์ 10: removeByName
-
-ฝึก: Array method (filter)
-
-คำอธิบาย: คืน array ใหม่ที่ลบ object ตาม name ที่กำหนด
-
-Concept: การสร้าง array ใหม่โดยกรองค่าที่ไม่ต้องการ
+สิ่งที่ฉันกำลังฝึก: Array method (filter)
+สิ่งที่ฉันทำ: ฉันลบ object ออกจาก array ตาม name ที่กำหนด
+วิธีที่ใช้เขียน: ใช้ .filter() เพื่อเก็บเฉพาะ object ที่ไม่ตรงกับ name
 
 โจทย์ 11: mergeData
-
-ฝึก: Array method (reduce) + Object manipulation
-
-คำอธิบาย: รวม array 2 ตัวตาม id ถ้าซ้ำให้นำของ arr2 ทับ
-
-Concept: การ merge array ของ object และ update object ตาม key
+สิ่งที่ฉันกำลังฝึก: Array method (reduce) + Object manipulation
+สิ่งที่ฉันทำ: ฉันรวมข้อมูลจาก array สองตัว ถ้ามี id ซ้ำ ให้ข้อมูลจาก array หลังทับข้อมูลเดิม
+วิธีที่ใช้เขียน: ใช้ .reduce() สร้าง object ตาม id แล้วแปลงกลับเป็น array
 
 โจทย์ 12: maxBy
-
-ฝึก: Array method (reduce)
-
-คำอธิบาย: คืน object ที่มีค่า property สูงสุด (key)
-
-Concept: การเปรียบเทียบค่าใน reduce และคืน element ที่มีค่ามากที่สุด
+สิ่งที่ฉันกำลังฝึก: Array method (reduce)
+สิ่งที่ฉันทำ: ฉันหาค่า object ที่มี property key สูงสุด
+วิธีที่ใช้เขียน: ใช้ .reduce() เปรียบเทียบค่าของ key แล้วคืน object ที่มากกว่า
 
 โจทย์ 13: compose
-
-ฝึก: Higher-Order Function
-
-คำอธิบาย: คืนฟังก์ชัน h(x) = f(g(x))
-
-Concept: การสร้างฟังก์ชันซ้อน (closure) และ composition ของฟังก์ชัน
+สิ่งที่ฉันกำลังฝึก: Higher-Order Function
+สิ่งที่ฉันทำ: ฉันสร้างฟังก์ชันใหม่ที่เป็น composition ของฟังก์ชันสองตัว h(x) = f(g(x))
+วิธีที่ใช้เขียน: ใช้การ return function และซ้อนการเรียก f และ g
 
 โจทย์ 14: nthHighestUniqueSalary
-
-ฝึก: Array method (sort, reduce) + Array manipulation
-
-คำอธิบาย: คืน array ของพนักงานที่มีเงินเดือนอันดับ n แบบไม่ซ้ำ
-
-Concept: การจัดกลุ่มเงินเดือนซ้ำ, sort, และดึงกลุ่มอันดับที่ n
+สิ่งที่ฉันกำลังฝึก: Array method (sort, reduce) + Array manipulation
+สิ่งที่ฉันทำ: ฉันหาพนักงานที่มีเงินเดือนอันดับ n โดยไม่นับค่าซ้ำ
+วิธีที่ใช้เขียน: ใช้ .map() ดึงเงินเดือน -> .sort() -> filter ซ้ำ -> เลือกอันดับที่ n
 
 โจทย์ 15: EmployeeStats (Class)
-
-ฝึก: Class, Methods, Array manipulation
-
-คำอธิบาย:
-
-จัดการพนักงาน {id, name, dept, salary}
-
-upsert(emp): เพิ่ม/อัปเดต employee ตาม id
-
-raise(id, amount): ปรับเงินเดือน
-
-median(dept): คืนค่ามัธยฐานของเงินเดือนแผนก
-
-Concept: การสร้าง class, ใช้ method, manipulate array ของ object, closure ภายใน class, การคำนวณ median แบบ array
+สิ่งที่ฉันกำลังฝึก: Class, Methods, Array manipulation
+สิ่งที่ฉันทำ: ฉันสร้างคลาสที่จัดการพนักงาน เช่น เพิ่ม/อัปเดต ปรับเงินเดือน และหามัธยฐานของแผนก
+วิธีที่ใช้เขียน: ใช้ class + method, ใช้ array method (map, filter, reduce) สำหรับการจัดการข้อมูล และเขียนฟังก์ชันหามัธยฐาน
